@@ -1,17 +1,19 @@
 ###
 PHASE 1: //Set UP 
-[] Install Nodeman 
+[x] Install Nodeman 
 [] NPM install
-[] Npm Run server 
-[] NPM Run Client (Seperate terminal)
+[x] Npm Run server 
+[x] NPM Run Client (Seperate terminal)
 
 PHASE 2
-[] Import useState
-[] Create Component
-    []Gallery List Folder 
-    [] GalleryList.jsx
-    [] GalleryItem Folder
-           [] GalleryItem.jsx
-[] GET 
+[x] Import useState
+[x] Create Component
+    [x]Gallery List Folder 
+    [x] GalleryList.jsx
+    [x] GalleryItem Folder
+           [x] GalleryItem.jsx
+    [x]Create useState
+    [x]Create useEffect
+[x] GET 
 [] PUT
 
