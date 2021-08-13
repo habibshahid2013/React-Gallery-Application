@@ -1,0 +1,17 @@
+###
+PHASE 1: //Set UP 
+[] Install Nodeman 
+[] NPM install
+[] Npm Run server 
+[] NPM Run Client (Seperate terminal)
+
+PHASE 2
+[] Import useState
+[] Create Component
+    []Gallery List Folder 
+    [] GalleryList.jsx
+    [] GalleryItem Folder
+           [] GalleryItem.jsx
+[] GET 
+[] PUT
+
