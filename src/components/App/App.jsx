@@ -2,11 +2,15 @@ import React from 'react';
 import './App.css';
 import {useEffect, useState} from 'react';
 import axios from 'axios';
+import GalleryList from '../GalleryList/GalleryList'
+import GalleryItem from '../GalleryItem/GalleryItem'
+import Header from '../App/Header/Header'
+import { H } from 'jest-haste-map';
 
 
 function App() {
 
-  let [galleryList, setGalleryList] = useState([])
+  let [GalleryList, setGalleryList] = useState([])
 
   useEffect(() =>{
     //Similar to onReady running doe on load
@@ -31,10 +35,10 @@ function App() {
 
     return (
       <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Gallery of My Life</h1>
-        </header>
+        <Header/>
         <p>Gallery goes here</p>
+        <GalleryList 
+          />
         <img src="images/goat_small.jpg"/>
       </div>
     );
