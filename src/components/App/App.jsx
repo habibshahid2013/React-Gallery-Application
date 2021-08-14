@@ -3,20 +3,19 @@ import './App.css';
 import {useEffect, useState} from 'react';
 import axios from 'axios';
 import GalleryList from '../GalleryList/GalleryList'
-import GalleryItem from '../GalleryItem/GalleryItem'
 import Header from '../App/Header/Header'
-import { H } from 'jest-haste-map';
+
 
 
 function App() {
 
-  let [GalleryList, setGalleryList] = useState([])
+  let [galleryList, setGalleryList] = useState([])
 
   useEffect(() =>{
     //Similar to onReady running doe on load
     FetchGallery();
 
-  })
+  },[])
 
   const FetchGallery = () => {
     //when declaring a FetchGallery that will be responsible for 
@@ -38,8 +37,9 @@ function App() {
         <Header/>
         <p>Gallery goes here</p>
         <GalleryList 
+          galleryList = {galleryList}
           />
-        <img src="images/goat_small.jpg"/>
+       
       </div>
     );
 }
