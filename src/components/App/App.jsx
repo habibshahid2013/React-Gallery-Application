@@ -33,8 +33,10 @@ function App() {
   
   let insertLikes = (id) => {
     axios.put(`/gallery/like/${id}`
+    //axios doesn't like the method: url: way. 
     ).then(response => {
       console.log('insert likes /PUT', response);
+      //This sends the data to fetchGallery.
       FetchGallery();
     }).catch(error => {
       console.log('there is a catch error',error);
@@ -47,6 +49,7 @@ function App() {
         <Header/>
         <p>Gallery goes here</p>
         <GalleryList 
+        //gallerylist (state) & addlikes are both being propped through galleryLIst Component.
           galleryList = {galleryList}
           addLikes = {insertLikes}
           />

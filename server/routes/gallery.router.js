@@ -4,6 +4,8 @@ const galleryItems = require('../modules/gallery.data');
 
 // DO NOT MODIFY THIS FILE FOR BASE MODE
 
+//Here you can see that galleryItem is being looped through and if the 
+//ID matches the item ID the likes is being added by 1
 // PUT Route
 router.put('/like/:id', (req, res) => {
     console.log(req.params);
