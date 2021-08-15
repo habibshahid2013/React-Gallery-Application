@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import {useEffect, useState} from 'react';
 import axios from 'axios';
-import GalleryList from '../GalleryList/GalleryList'
-import Header from '../App/Header/Header'
+import GalleryList from '../GalleryList/GalleryList';
+import Header from '../App/Header/Header';
 
 
 
@@ -27,8 +27,18 @@ function App() {
       setGalleryList(response.data)
       // take the data from the response and assign it to the setGalleryList
     }).catch(error => {
-      console.log('GET /Gallery', error);
+      console.log('GET /gallery', error);
     });
+  }
+  
+  let insertLikes = (id) => {
+    axios.put(`/gallery/like/${id}`
+    ).then(response => {
+      console.log('insert likes /PUT', response);
+      FetchGallery();
+    }).catch(error => {
+      console.log('there is a catch error',error);
+    })
   }
 
 
@@ -38,7 +48,9 @@ function App() {
         <p>Gallery goes here</p>
         <GalleryList 
           galleryList = {galleryList}
+          addLikes = {insertLikes}
           />
+          <button> APP JSX button</button>
        
       </div>
     );

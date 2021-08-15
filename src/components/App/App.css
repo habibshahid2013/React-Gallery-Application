@@ -13,9 +13,11 @@
   font-size: 1.5em;
 }
 
-img{
-  height: 100px;
+
+.structureThings{
+ height: 100px;
   width: 100px;
+  align-items: center;
 }
 
 
