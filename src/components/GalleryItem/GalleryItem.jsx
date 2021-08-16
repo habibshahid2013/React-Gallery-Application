@@ -19,7 +19,7 @@ function GalleryItem ({item, setLikes}){
   }
 
   //We leverage the If statement to use a conditional rendering. we pass through the State and alter the default boolean. 
-  //providing two differnt retirns for the outcome of the rending  
+  //providing two different returns for the outcome of the rending  
   if (useImage){
 
     return (

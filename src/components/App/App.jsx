@@ -47,7 +47,7 @@ function App() {
     return (
       <div className="App">
         <Header/>
-        <p>Gallery goes here</p>
+        <p>This is my Gallery</p>
         <GalleryList 
         //gallerylist (state) & addlikes are both being propped through galleryLIst Component.
           galleryList = {galleryList}
